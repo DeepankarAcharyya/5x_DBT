@@ -1,0 +1,9 @@
+select
+        DATE,
+        LOCATION_ISO_CODE as location_code,
+        TOTAL_CASES,
+        TOTAL_ACTIVE_CASES,
+        TOTAL_DEATHS,
+        TOTAL_RECOVERED
+    
+        from FIVETRAN_INTERVIEW_DB.GOOGLE_SHEETS.COVID_19_INDONESIA_DEEPANKAR_ACHARYYA

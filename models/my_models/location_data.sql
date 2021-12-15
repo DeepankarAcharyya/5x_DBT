@@ -1,0 +1,11 @@
+select  COUNT(*) as count_,
+        LOCATION,
+        LOCATION_ISO_CODE as location_code,
+        LATITUDE,
+        LONGITUDE,
+        AREA_KM_2_,
+        POPULATION,
+        POPULATION_DENSITY
+        from FIVETRAN_INTERVIEW_DB.GOOGLE_SHEETS.COVID_19_INDONESIA_DEEPANKAR_ACHARYYA 
+        group by (LOCATION,location_code, LATITUDE, LONGITUDE, AREA_KM_2_,POPULATION,POPULATION_DENSITY )
+
